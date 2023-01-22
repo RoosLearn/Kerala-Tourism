@@ -1,0 +1,130 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+video{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.w-100{
+    height: 100vh;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index:2;
+}
+.carousel-caption h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.carousel-inner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.fish-row {
+    border-bottom: #888888 1px double;
+    border-top: #888888 1px double;
+    height: 3px;
+    width: 100%; max-width: 100%;
+    margin-top: 2em;
+  }
+  .hellohal {
+    width: 100px; margin: -33px auto 0; 
+    display: block; z-index: 100;
+    background: #ffffff;}
+
+.tile{
+    background: #16163f;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper a{
+    text-decoration: none;
+    font-family: titan one;
+    padding: 0 80px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+}
+.wrapper a span{
+    position: absolute;
+    display: none;
+    z-index: 99;
+    transform: scale(0);
+    overflow: hidden;
+    border: 10px ridge #fff;
+}
+.wrapper a:hover span{
+    display: block;
+    transform: translate(-30%, -160%) scale(1.5);
+    border-radius: 10px;
+}
+#pic{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 165px;
+    }
+    .carousel-caption h5{
+        font-size: 16px;
+    }
+}
