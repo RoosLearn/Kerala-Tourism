@@ -35,3 +35,13 @@
 .navbar-light .navbar-nav .navbar-link{
     color: #000;
 }
+
+#strength-indicator {
+    font-weight: bold;
+  }
+
+  #error-messages {
+    color: red;
+    font-weight: bold;
+  }
+  

@@ -77,9 +77,9 @@
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                        <input type="tel" id="phone-number" name="phone-number" class="form-control form-control-lg" pattern="[0-9]{3}[0-9]{3}[0-9]{4}|[0-9]{3}[-. ]?[0-9]{3}[-. ]?[0-9]{4}|[0-9]{3}[. ]?[0-9]{3}[. ]?[0-9]{4}" required />
                         <label class="form-label" for="form3Example99">Phone Number</label>
-                        <label for="error" id="error"></label>
+                        <label for="error" id="error-message"></label>
                       </div>
       
                       <div class="form-outline mb-4">
@@ -89,15 +89,15 @@
                       </div>
 
                       <div class="form-outline mb-4">
-                        <input type="password" id="form3Example97" class="form-control form-control-lg" />
+                        <input type="password" id="password" class="form-control form-control-lg" required/>
                         <label class="form-label" for="form3Example97">Password</label>
-                        <label for="error" id="error2"></label>
+                        <label for="error" id="strength-indicator"></label>
                       </div>
 
                       <div class="form-outline mb-4">
-                        <input type="password" id="form3Example97" class="form-control form-control-lg" />
+                        <input type="password" id="repeat-password" class="form-control form-control-lg" required />
                         <label class="form-label" for="form3Example97">Repeat Password</label>
-                        <label for="error" id="error3"></label>
+                        <label for="error" id="error-messages"></label>
                       </div>
       
                       <div class="d-flex justify-content-center pt-3">
